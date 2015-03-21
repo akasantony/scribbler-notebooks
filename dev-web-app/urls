@@ -1,0 +1,43 @@
+Deal
+
+
+POST localhost.com/deal -> store to DB.
+
+GET localhsot.com/deal/id -> send deal with id.
+
+GET localhost.com/deals -> send all deals.
+
+
+var express = require('express');
+
+var app = new express();
+
+app.use();
+app.use();
+app.use();
+app.use();
+
+
+app.get('/deal', function(req, res) {
+    // make query to database for all deals.
+});
+
+app.get('/deal/:id', function(req, res) {
+    var id = req.params.id;
+    
+    // make query to database for id.
+});
+
+app.post('/deal', function(req, res) {
+    var title = req.params.title;
+    var content = req.params.content;
+    
+    // write the data above to Mysql.
+    insert into db values (title, content);
+});
+
+app.get('*', function(req, res) {
+    res.send('404: page not found;');
+});
+
+app.listen(3000);

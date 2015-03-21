@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Scribler Notebooks | Admin Page</title>
+    </head>
+
+    <body>
+        <div id="container">
+            <form id="data-submit" action="/add" method="post" enctype="multipart/form-data">
+                <br>Ad ID: <input type="text" name="adid" id="adid">
+                <br>Title: <input type="text" name="title" id="title">
+                <br> Category: <input type="text" name="category" id="category">
+                <br> Short description of deal: <input type="text" name="description1" id="description1">
+                <br> Full Description of deal: <input type="text" name="description2" id="description2">
+                <br> Icon image: <input type="file" name="logoimage" id="logoimage">
+                <br> Cover image: <input type="file" name="coverimage" id="coverimage">               
+                <br><button id="submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+
+</html>
