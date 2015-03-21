@@ -1,2 +1,2 @@
 # scribbler-notebooks
-Server side code for Scribbler Notebooks.
+Server side code and Android app code for Scribbler Notebooks.
